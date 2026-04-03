@@ -1,0 +1,26 @@
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (main)
+$ curl -H "Authorization: token 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" \
+     -s https://api.github.com/repos/Bassam16Sem/mcino-Introduction-to-Git-and-GitHub/branches
+[
+  {
+    "name": "main",
+    "commit": {
+      "sha": "ad95b0abe521c61effc692e83d5babd5fbf25910",
+      "url": "https://api.github.com/repos/Bassam16Sem/mcino-Introduction-to-Git-and-GitHub/commits/ad95b0abe521c61effc692e83d5babd5fbf25910"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/Bassam16Sem/mcino-Introduction-to-Git-and-GitHub/branches/main/protection"
+  }
+]
