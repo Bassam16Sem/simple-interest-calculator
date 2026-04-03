@@ -1,0 +1,48 @@
+Bassam@BassamNuris16 MINGW64 ~
+$ cd mcino-Introduction-to-Git-and-GitHub
+bash: cd: mcino-Introduction-to-Git-and-GitHub: No such file or directory
+
+Bassam@BassamNuris16 MINGW64 ~
+$ cd mcino-Introduction-to-Git-and-GitHub~
+bash: cd: mcino-Introduction-to-Git-and-GitHub~: No such file or directory
+
+Bassam@BassamNuris16 MINGW64 ~
+$ git checkout main
+fatal: not a git repository (or any of the parent directories): .git
+
+Bassam@BassamNuris16 MINGW64 ~
+$ git clone https://github.com/Bassam16Sem/mcino-Introduction-to-Git-and-GitHub.git
+Cloning into 'mcino-Introduction-to-Git-and-GitHub'...
+remote: Enumerating objects: 35, done.
+remote: Total 35 (delta 0), reused 0 (delta 0), pack-reused 35 (from 1)
+Receiving objects: 100% (35/35), 17.29 KiB | 2.16 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+Bassam@BassamNuris16 MINGW64 ~
+$ cd mcino-Introduction-to-Git-and-GitHub
+
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (main)
+$ git checkout -b bug-fix-typo
+Switched to a new branch 'bug-fix-typo'
+
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo)
+$ echo "Memperbaiki typo" >> README.md
+
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo)
+$ git add README.md
+git commit -m "Fix typo"
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[bug-fix-typo 06079b3] Fix typo
+ 1 file changed, 1 insertion(+)
+
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Bassam@BassamNuris16 MINGW64 ~/mcino-Introduction-to-Git-and-GitHub (main)
+$ git merge bug-fix-typo
+Updating ad95b0a..06079b3
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
